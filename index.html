@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Order Calculator</title>
+</head>
+<body>
+    <div class="total">
+        <div class="sub">
+            <form action="">
+                <div class="title">Total Amount</div>
+                <div class="ok">
+                    <input onkeyup="calculateOrder()" type="text" placeholder="$0.00" id="input">
+                </div>
+                <div class="title">Discount</div>
+                <div class="ok">
+                    <input onkeyup="calculateOrder()" type="text" placeholder="%10" id="inputTwo">
+                </div>   
+            </form>
+            <!-- flex -->
+            <div class="bottom">
+                <div>
+                    <div class="title">
+                        Order
+                    </div>
+                    <div class="control">
+                        <span class="shift">
+                            <button class="btn" onclick="increaseOrder()">+</button>
+                        </span>
+                        <span id="numberOfOrder">1</span>
+                        <span class="shift2">
+                            <button class="btn" onclick="decreaseOrder()">-</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- total per order -->
+                <div class="perOrder">
+                    <div class="title">
+                        Total Per Order
+                    </div>
+                    <div id="dollar">
+                        $0.00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

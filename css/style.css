@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF0E6;
+    min-height: 100vh;
+}
+
+.sub{
+    background: #4E281E;
+    width: 30%;
+    border-radius: 12px;
+    padding: 50px;
+    color: #FFF0E6;
+    font-size: 20px;
+}
+
+.title{
+    margin-bottom: 8px;
+}
+
+#input, #inputTwo{
+    background: #FFF0E6;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+.ok{
+    margin-bottom: 12px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.btn{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: #FFF0E6;
+    color: #4E281E;
+    align-items: center;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+}
+
+.shift{
+    padding-right: 6px;
+}
+
+.shift2{
+    padding-left: 6px;
+}
+
+.perOrder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#dollar{
+    font-size: 32px;
+    font-weight: 700;
+}
