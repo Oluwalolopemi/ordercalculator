@@ -1,6 +1,6 @@
 // global access to all important ID
-const input = document.getElementById('input');
-const inputTwo = document.getElementById('inputTwo');
+const amount = document.getElementById('amount');
+const tip = document.getElementById('tip');
 const numberOfOrderDiv = document.getElementById('numberOfOrder');
 const dollarDiv = document.getElementById('dollar');
 
@@ -8,10 +8,10 @@ const dollarDiv = document.getElementById('dollar');
 let numberOfOrder = Number(numberOfOrderDiv.innerHTML)
 
 const calculateOrder = () => {
-    const amount = Number(input.value)
-    const discountPercentage = Number(inputTwo.value) / 100
-    const tipAmount = amount * discountPercentage
-    const total = tipAmount + amount
+    const bill = Number(amount.value)
+    const discountPercentage = Number(discount.value) / 100
+    const tipAmount = bill * discountPercentage
+    const total = tipAmount + bill
     const dollar = total / numberOfOrder
     dollarDiv.innerText = `$${dollar.toFixed(2)}`
 };
