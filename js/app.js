@@ -9,8 +9,8 @@ let numberOfOrder = Number(numberOfOrderDiv.innerHTML)
 
 const calculateOrder = () => {
     const bill = Number(amount.value)
-    const discountPercentage = Number(discount.value) / 100
-    const tipAmount = bill * discountPercentage
+    const tipPercentage = Number(tip.value) / 100
+    const tipAmount = bill * tipPercentage
     const total = tipAmount + bill
     const dollar = total / numberOfOrder
     dollarDiv.innerText = `$${dollar.toFixed(2)}`
