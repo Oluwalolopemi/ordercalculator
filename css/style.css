@@ -81,3 +81,22 @@
     font-size: 32px;
     font-weight: 700;
 }
+
+/* media query */
+@media screen and (max-width: 429px){
+    .sub{
+        
+        width: 70%;
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    #dollar{
+        font-size: 20px;
+    }
+
+    #input, #inputTwo{
+        font-size: 12px;
+    }
+    
+}
