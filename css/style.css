@@ -26,7 +26,7 @@
     margin-bottom: 8px;
 }
 
-#amount, #tip{
+#amount, #tip, #discount{
     background: #FFF0E6;
     border-radius: 4px;
     border: none;
@@ -95,7 +95,7 @@
         font-size: 20px;
     }
 
-    #amount, #tip{
+    #amount, #tip, #discount{
         font-size: 12px;
     }
     
