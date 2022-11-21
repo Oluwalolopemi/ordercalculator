@@ -12,7 +12,7 @@ const calculateOrder = () => {
     const bill = Number(amount.value)
     const tipPercentage = Number(tip.value) / 100
     const tipAmount = bill * tipPercentage
-    const discountCal = Number(discount.value) / 100
+    const discountCal = Number(discount.value)
     const subBill = bill - discountCal
     const total = tipAmount + subBill
     const dollar = total * numberOfOrder
